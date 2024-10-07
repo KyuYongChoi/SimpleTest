@@ -1,0 +1,132 @@
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-4] [FilterChainProxy:218] - Securing OPTIONS /schedule/month?schdulSe=&year=2024&month=9&date=7
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-3] [FilterChainProxy:218] - Securing OPTIONS /schedule/month?schdulSe=&year=2024&month=9&date=7
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-4] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-3] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-4] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-3] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=9&date=7
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [JwtAuthenticationFilter:64] - Unable to verify JWT Token: JWT expired at 2024-10-05T23:11:48Z. Current time: 2024-10-07T21:17:55Z, a difference of 165967813 milliseconds.  Allowed clock skew: 0 milliseconds.
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [AnonymousAuthenticationFilter:100] - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SessionManagementFilter:116] - Request requested invalid session id 31EFBE9F6A5E0DCD5C60FE628DC50F61
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=9&date=7
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=9&date=7", parameters={masked}
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@33c34bae] for JDBC transaction
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@33c34bae] to manual commit
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3941f3cd]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@33c34bae] will be managed by Spring
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3941f3cd]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3941f3cd]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3941f3cd]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3941f3cd]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@33c34bae]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@33c34bae] after transaction
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@558233ba] for JDBC transaction
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@558233ba] to manual commit
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63eb6d5c]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@558233ba] will be managed by Spring
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202410(String)
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63eb6d5c]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63eb6d5c]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63eb6d5c]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63eb6d5c]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@558233ba]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@558233ba] after transaction
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@5c61edad]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-6] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=9&date=7
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [JwtAuthenticationFilter:64] - Unable to verify JWT Token: JWT expired at 2024-10-05T23:11:48Z. Current time: 2024-10-07T21:17:55Z, a difference of 165967847 milliseconds.  Allowed clock skew: 0 milliseconds.
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [AnonymousAuthenticationFilter:100] - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SessionManagementFilter:116] - Request requested invalid session id 31EFBE9F6A5E0DCD5C60FE628DC50F61
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=9&date=7
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=9&date=7", parameters={masked}
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@62302ce8] for JDBC transaction
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@62302ce8] to manual commit
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46950265]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@62302ce8] will be managed by Spring
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46950265]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46950265]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46950265]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46950265]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@62302ce8]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@62302ce8] after transaction
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@7b33136e] for JDBC transaction
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7b33136e] to manual commit
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15dbb047]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7b33136e] will be managed by Spring
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202410(String)
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15dbb047]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15dbb047]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15dbb047]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15dbb047]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@7b33136e]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7b33136e] after transaction
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@6d724bcc]
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-10-07 21:17:55[http-nio-8080-exec-5] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-7] [FilterChainProxy:218] - Securing OPTIONS /schedule
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-7] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-7] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [FilterChainProxy:218] - Securing POST /schedule
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [JwtAuthenticationFilter:64] - Unable to verify JWT Token: JWT expired at 2024-10-05T23:11:48Z. Current time: 2024-10-07T21:18:01Z, a difference of 165973964 milliseconds.  Allowed clock skew: 0 milliseconds.
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [AnonymousAuthenticationFilter:100] - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [SessionManagementFilter:116] - Request requested invalid session id 31EFBE9F6A5E0DCD5C60FE628DC50F61
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [ReloadableResourceBundleMessageSource:455] - No properties file found for [classpath:/egovframework/message/com/message-common_ko_KR] - neither plain properties nor XML
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [ReloadableResourceBundleMessageSource:425] - Re-caching properties for filename [classpath:/egovframework/message/com/message-common_ko] - file hasn't been modified
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [ReloadableResourceBundleMessageSource:425] - Re-caching properties for filename [classpath:/egovframework/message/com/message-common] - file hasn't been modified
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [ReloadableResourceBundleMessageSource:455] - No properties file found for [classpath:/org/egovframe/rte/fdl/idgnr/messages/idgnr_ko_KR] - neither plain properties nor XML
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [ReloadableResourceBundleMessageSource:425] - Re-caching properties for filename [classpath:/org/egovframe/rte/fdl/idgnr/messages/idgnr_ko] - file hasn't been modified
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [ReloadableResourceBundleMessageSource:425] - Re-caching properties for filename [classpath:/org/egovframe/rte/fdl/idgnr/messages/idgnr] - file hasn't been modified
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [ReloadableResourceBundleMessageSource:455] - No properties file found for [classpath:/org/egovframe/rte/fdl/property/messages/properties_ko_KR] - neither plain properties nor XML
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [ReloadableResourceBundleMessageSource:425] - Re-caching properties for filename [classpath:/org/egovframe/rte/fdl/property/messages/properties_ko] - file hasn't been modified
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [ReloadableResourceBundleMessageSource:499] - Loading properties [properties.properties]
+DEBUG 24-10-07 21:18:01[http-nio-8080-exec-8] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-10-07 21:18:32[SpringApplicationShutdownHook] [ApplicationAvailabilityBean:77] - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+DEBUG 24-10-07 21:18:32[SpringApplicationShutdownHook] [AnnotationConfigServletWebServerApplicationContext:1051] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39b6de5c, started on Sat Oct 05 22:11:21 KST 2024
+DEBUG 24-10-07 21:18:32[SpringApplicationShutdownHook] [ConfigurationPropertySourcesPropertyResolver$DefaultResolver:115] - Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+DEBUG 24-10-07 21:18:32[SpringApplicationShutdownHook] [DefaultLifecycleProcessor:365] - Stopping beans in phase 2147483647
+DEBUG 24-10-07 21:18:32[SpringApplicationShutdownHook] [DefaultLifecycleProcessor:238] - Bean 'webServerGracefulShutdown' completed its stop procedure
+DEBUG 24-10-07 21:18:32[SpringApplicationShutdownHook] [DefaultLifecycleProcessor:365] - Stopping beans in phase 2147483646
+DEBUG 24-10-07 21:18:32[SpringApplicationShutdownHook] [DefaultLifecycleProcessor:238] - Bean 'webServerStartStop' completed its stop procedure
+DEBUG 24-10-07 21:18:32[SpringApplicationShutdownHook] [DefaultLifecycleProcessor:365] - Stopping beans in phase -2147483647
+DEBUG 24-10-07 21:18:32[SpringApplicationShutdownHook] [DefaultLifecycleProcessor:238] - Bean 'springBootLoggingLifecycle' completed its stop procedure
+DEBUG 24-10-07 21:18:32[SpringApplicationShutdownHook] [AnnotationMBeanExporter:452] - Unregistering JMX-exposed beans on shutdown
+DEBUG 24-10-07 21:18:32[SpringApplicationShutdownHook] [ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  24-10-07 21:18:32[SpringApplicationShutdownHook] [EmbeddedDatabaseFactory:221] - Shutting down embedded database: url='jdbc:hsqldb:mem:testdb'
+DEBUG 24-10-07 21:18:32[SpringApplicationShutdownHook] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
